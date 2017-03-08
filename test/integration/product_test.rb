@@ -13,6 +13,6 @@ class ProductTest < ActionDispatch::IntegrationTest
     assert_equal root_path, page.current_path
     assert_equal 200, page.status_code
     assert page.has_content?("Change your life: Learn to code")
-    save_and_open_screenshot
+    # save_and_open_screenshot
   end
 end

@@ -19,9 +19,16 @@ gem 'autoprefixer-rails'
 
 gem 'faker'
 
-group :development, :test do
-  gem 'binding_of_caller'
+group :development  do
   gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :development, :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'launchy'
+  gem 'minitest-reporters'
 
   gem 'pry-byebug'
   gem 'pry-rails'
@@ -29,5 +36,3 @@ group :development, :test do
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-

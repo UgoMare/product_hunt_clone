@@ -7,4 +7,8 @@ class User < ApplicationRecord
   def full_name
     return "#{first_name.capitalize} #{last_name.capitalize}"
   end
+
+  def age
+    rand(100)
+  end
 end
